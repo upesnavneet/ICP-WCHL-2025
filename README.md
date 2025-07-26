@@ -1,6 +1,6 @@
-# SmartScan.AI
+# BlockBot
 
-SmartScan.AI is an intelligent crypto-focused assistant that helps users understand blockchain concepts, smart contracts, DeFi protocols, tokenomics, and market trends — all in plain, simple terms. The goal is to make crypto education more accessible through AI-powered explanations.
+BlockBot is an intelligent crypto-focused assistant that helps users understand blockchain concepts, smart contracts, DeFi protocols, tokenomics, and market trends — all in plain, simple terms. The goal is to make crypto education more accessible through AI-powered explanations.
 
 ---
 
