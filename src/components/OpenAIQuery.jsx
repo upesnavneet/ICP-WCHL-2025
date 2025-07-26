@@ -131,7 +131,7 @@ const OpenAIQuery = () => {
                               cursorCharacter="|"
                             />
                           ) : (
-                            msg.content
+                             <p> msg.content </p>
                           )}
                         </p>
                       </div>
