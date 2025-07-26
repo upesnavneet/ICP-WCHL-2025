@@ -35,7 +35,11 @@ const OpenAIQuery = () => {
     const chatHistory = [systemMessage, ...updatedMessages];
 
     try {
-      const apiKey = import.meta.env.VITE_OPENROUTER_KEY;
+      const apiKey = import.meta.env.VITE_OPENROUTER_API_KEY;
+
+if (!apiKey) {
+  console.error("❌ API Key not found");
+}
 
       const res = await axios.post(
         'https://openrouter.ai/api/v1/chat/completions',
@@ -45,9 +49,8 @@ const OpenAIQuery = () => {
         },
         {
           headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${apiKey}`,
-            'HTTP-Referer': 'http://localhost:5173/',
+            "Authorization": `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
           },
         }
       );
@@ -120,7 +123,7 @@ const OpenAIQuery = () => {
                             <button onClick={handleStop} className="stop-button">Stop</button>
                           )}
                         </div>
-                        <p>
+                        <div>
                           {shouldAnimate && showTyping ? (
                             <TextType
                               key={typingKey}
@@ -133,7 +136,7 @@ const OpenAIQuery = () => {
                           ) : (
                              <p> msg.content </p>
                           )}
-                        </p>
+                        </div>
                       </div>
                     )}
                   </div>
