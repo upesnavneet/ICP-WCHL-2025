@@ -22,7 +22,6 @@ BlockBot is an intelligent crypto-focused assistant that helps users understand 
 - OpenRouter API (GPT-3.5-turbo)
 - Custom CSS
 - Local state management with React Hooks
-- Typing animation with a reusable `TextType` component
 
 ---
 
